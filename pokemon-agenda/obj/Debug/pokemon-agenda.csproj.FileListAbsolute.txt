@@ -18,3 +18,13 @@ C:\Users\thece\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pok
 C:\Users\thece\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.csproj.CoreCompileInputs.cache
 C:\Users\thece\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.exe
 C:\Users\thece\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.pdb
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\bin\Debug\pokemon-agenda.exe.config
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\bin\Debug\pokemon-agenda.exe
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\bin\Debug\pokemon-agenda.pdb
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.csproj.AssemblyReference.cache
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon_agenda.fmCadastroPokemon.resources
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon_agenda.Properties.Resources.resources
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.csproj.GenerateResource.cache
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.csproj.CoreCompileInputs.cache
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.exe
+C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.pdb

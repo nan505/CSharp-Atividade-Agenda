@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAjuda = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -188,11 +189,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAjuda
+            // 
+            this.btnAjuda.Location = new System.Drawing.Point(18, 415);
+            this.btnAjuda.Name = "btnAjuda";
+            this.btnAjuda.Size = new System.Drawing.Size(75, 23);
+            this.btnAjuda.TabIndex = 8;
+            this.btnAjuda.Text = "Ajuda";
+            this.btnAjuda.UseVisualStyleBackColor = true;
+            this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
+            // 
             // fmCadastroPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAjuda);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbTituloAgenda);
             this.Controls.Add(this.pictureBox1);
@@ -221,6 +233,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.NumericUpDown numNivel;
         private System.Windows.Forms.ComboBox cbTipo;
+        private System.Windows.Forms.Button btnAjuda;
     }
 }
 

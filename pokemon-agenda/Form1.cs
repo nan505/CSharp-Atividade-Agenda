@@ -32,10 +32,13 @@ namespace pokemon_agenda
             string tipoPokemon = cbTipo.Text;
             int nivelPokemon = (int)numNivel.Value;
 
+            Pokemon infoPokemon = new Pokemon(nomePokemon, tipoPokemon, nivelPokemon);
             if(nomePokemon != string.Empty && tipoPokemon != string.Empty)
             {
                 MessageBox.Show($"O Pokémon {nomePokemon} do tipo {tipoPokemon} foi cadastrado com o nível {nivelPokemon}.",
                 "Mensagem de Aviso");
+
+                infoPokemon.fnDescricao();
 
                 fnLimparFormularios();
             }
@@ -48,6 +51,11 @@ namespace pokemon_agenda
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             fnLimparFormularios();
+        }
+
+        private void btnAjuda_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
