@@ -53,9 +53,9 @@
             this.lbTituloAgenda.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lbTituloAgenda.Location = new System.Drawing.Point(82, 22);
             this.lbTituloAgenda.Name = "lbTituloAgenda";
-            this.lbTituloAgenda.Size = new System.Drawing.Size(355, 42);
+            this.lbTituloAgenda.Size = new System.Drawing.Size(305, 42);
             this.lbTituloAgenda.TabIndex = 1;
-            this.lbTituloAgenda.Text = "Agenda de Pokémon";
+            this.lbTituloAgenda.Text = "Agenda Pokémon";
             // 
             // groupBox1
             // 
