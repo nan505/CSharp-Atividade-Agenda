@@ -28,3 +28,4 @@ C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\
 C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.csproj.CoreCompileInputs.cache
 C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.exe
 C:\Users\renan.srfranca\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon-agenda.pdb
+C:\Users\thece\source\repos\CSharp-Atividade-Agenda\pokemon-agenda\obj\Debug\pokemon_agenda.FormDetalhesPkmn.resources

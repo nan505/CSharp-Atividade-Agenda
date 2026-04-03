@@ -12,9 +12,22 @@ namespace pokemon_agenda
 {
     public partial class fmCadastroPokemon : Form
     {
+        BindingList<Pokemon> listaPokemon = new BindingList<Pokemon>();
         public fmCadastroPokemon()
         {
             InitializeComponent();
+
+            Pokemon p1 = new Pokemon("Pikachu", "Elétrico", 29);
+            Pokemon p2 = new Pokemon("Charmander", "Fogo", 6);
+            Pokemon p3 = new Pokemon("Bulbasaur", "Grama", 12);
+            Pokemon p4 = new Pokemon("Squirtle", "Água", 13);
+
+            listaPokemon.Add(p1);
+            listaPokemon.Add(p2);
+            listaPokemon.Add(p3);
+            listaPokemon.Add(p4);
+
+            dgvListaPokemon.DataSource = listaPokemon;
         }
 
         private void fnLimparFormularios()
@@ -32,13 +45,15 @@ namespace pokemon_agenda
             string tipoPokemon = cbTipo.Text;
             int nivelPokemon = (int)numNivel.Value;
 
-            Pokemon infoPokemon = new Pokemon(nomePokemon, tipoPokemon, nivelPokemon);
+            Pokemon novoPokemon = new Pokemon(nomePokemon, tipoPokemon, nivelPokemon);
             if(nomePokemon != string.Empty && tipoPokemon != string.Empty)
             {
+                listaPokemon.Add(novoPokemon);
+
                 MessageBox.Show($"O Pokémon {nomePokemon} do tipo {tipoPokemon} foi cadastrado com o nível {nivelPokemon}.",
                 "Mensagem de Aviso");
 
-                infoPokemon.fnDescricao();
+                novoPokemon.fnDescricao();
 
                 fnLimparFormularios();
             }

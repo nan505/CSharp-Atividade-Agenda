@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace pokemon_agenda
 {
-    internal class Pokemon
+    public class Pokemon
     {
-        string NomePkmn;
-        string TipoPkmn;
-        int NivelPkmn;
-        int VidaPkmn;
-        int DanoPkmn;
+        public string NomePkmn { get; set; }
+        public string TipoPkmn { get; set; }
+        public int NivelPkmn { get; set; }
+        public int VidaPkmn { get; set; }
+        public int DanoPkmn { get; set; }
 
         // Criação da função de inicialização padrão do meu objeto.
 
