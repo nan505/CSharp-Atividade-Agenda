@@ -1,0 +1,23 @@
+## Visual Studio Temp Files
+.vs/
+[Bb]in/
+[Ob]j/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## NuGet Packages
+packages/
+*.nuget.props
+*.nuget.targets
+
+## Build Results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## Outros
+*.log
+*.cache
