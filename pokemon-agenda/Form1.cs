@@ -30,6 +30,10 @@ namespace pokemon_agenda
             dgvListaPokemon.DataSource = listaPokemon;
         }
 
+        /// <summary>
+        /// Limpa os campos do formulário "Form1", retornado-os aos valores iniciais e definindo o foco de entrada para o campo "txtNome".
+        /// </summary>
+        /// <returns>Essa função não retorna nada.</returns>
         private void fnLimparFormularios()
         {
             txtNome.Clear();
@@ -71,6 +75,23 @@ namespace pokemon_agenda
         private void btnAjuda_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+            // Pegar a linha selecionada do Data Grid View, convertendo-a para o tipo "Pokemon"
+
+            Pokemon pkmnSelecionado = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
+
+            pkmnSelecionado.fnDescricao();
+
+            FormDetalhesPkmn formDetalhes = new FormDetalhesPkmn();
+            formDetalhes.pkmnRecebido = pkmnSelecionado;
+
+            // ShowDialog() força o usuário a focar na nova tela
+            // Show() permite que o usuário utilize qualquer tela simultâneamente
+
+            formDetalhes.ShowDialog();
         }
     }
 }
