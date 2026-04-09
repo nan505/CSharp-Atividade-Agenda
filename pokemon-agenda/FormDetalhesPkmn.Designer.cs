@@ -86,6 +86,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDetalhesPkmn";
             this.Text = "FormDetalhesPkmn";
+            this.Load += new System.EventHandler(this.FormDetalhesPkmn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagemPokedex)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
