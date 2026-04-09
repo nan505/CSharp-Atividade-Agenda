@@ -81,17 +81,35 @@ namespace pokemon_agenda
         {
             // Pegar a linha selecionada do Data Grid View, convertendo-a para o tipo "Pokemon"
 
-            Pokemon pkmnSelecionado = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
+            if (dgvListaPokemon.CurrentRow != null)
+            {
 
-            pkmnSelecionado.fnDescricao();
+                Pokemon pkmnSelecionado = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
 
-            FormDetalhesPkmn formDetalhes = new FormDetalhesPkmn();
-            formDetalhes.pkmnRecebido = pkmnSelecionado;
+                pkmnSelecionado.fnDescricao();
 
-            // ShowDialog() força o usuário a focar na nova tela
-            // Show() permite que o usuário utilize qualquer tela simultâneamente
+                FormDetalhesPkmn formDetalhes = new FormDetalhesPkmn();
+                formDetalhes.pkmnRecebido = pkmnSelecionado;
 
-            formDetalhes.ShowDialog();
+                // ShowDialog() força o usuário a focar na nova tela
+                // Show() permite que o usuário utilize qualquer tela simultâneamente
+
+                formDetalhes.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Selecione um dos Pokémon cadastrados na lista.", "Mensagem de Aviso");
+            }
+        }
+
+        // Estilizando o Data Grid View após as informações terem sido carregadas com sucesso
+        private void dgvListaPokemon_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvListaPokemon.Columns["NomePkmn"].HeaderText = "Nome";
+            dgvListaPokemon.Columns["TipoPkmn"].HeaderText = "Tipo";
+            dgvListaPokemon.Columns["NivelPkmn"].HeaderText = "Nível";
+            dgvListaPokemon.Columns["VidaPkmn"].HeaderText = "Vida";
+            dgvListaPokemon.Columns["DanoPkmn"].HeaderText = "Ataque";
         }
     }
 }

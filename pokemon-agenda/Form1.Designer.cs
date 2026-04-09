@@ -211,6 +211,7 @@
             this.dgvListaPokemon.Name = "dgvListaPokemon";
             this.dgvListaPokemon.Size = new System.Drawing.Size(394, 200);
             this.dgvListaPokemon.TabIndex = 3;
+            this.dgvListaPokemon.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvListaPokemon_DataBindingComplete);
             // 
             // btnVisualizar
             // 
