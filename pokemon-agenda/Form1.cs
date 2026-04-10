@@ -83,10 +83,7 @@ namespace pokemon_agenda
 
             if (dgvListaPokemon.CurrentRow != null)
             {
-
                 Pokemon pkmnSelecionado = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
-
-                pkmnSelecionado.fnDescricao();
 
                 FormDetalhesPkmn formDetalhes = new FormDetalhesPkmn();
                 formDetalhes.pkmnRecebido = pkmnSelecionado;
@@ -110,6 +107,26 @@ namespace pokemon_agenda
             dgvListaPokemon.Columns["NivelPkmn"].HeaderText = "Nível";
             dgvListaPokemon.Columns["VidaPkmn"].HeaderText = "Vida";
             dgvListaPokemon.Columns["DanoPkmn"].HeaderText = "Ataque";
+        }
+
+        private void btnTreinar_Click(object sender, EventArgs e)
+        {
+            if(dgvListaPokemon != null)
+            {
+                Pokemon pkmnParaTreinar = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
+
+                bool pkmnEstaNivel100 = pkmnParaTreinar.NivelPkmn == 100;
+
+                pkmnParaTreinar.fnTreinarPkmn();
+
+                if (pkmnEstaNivel100 == false) {
+                    
+                    lbNotTreino.Text = $"O Pokémon {pkmnParaTreinar.NomePkmn} subiu para o nível" +
+                        $" {pkmnParaTreinar.NivelPkmn}!";
+
+                    dgvListaPokemon.Refresh();
+                }
+            }
         }
     }
 }

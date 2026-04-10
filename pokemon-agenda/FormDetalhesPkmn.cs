@@ -21,9 +21,14 @@ namespace pokemon_agenda
 
         private void FormDetalhesPkmn_Load(object sender, EventArgs e)
         {
+
             lbNome.Text = "Nome: " + pkmnRecebido.NomePkmn;
             lbTipo.Text = "Tipo: " + pkmnRecebido.TipoPkmn;
             lbNivel.Text = "Nível: " + pkmnRecebido.NivelPkmn.ToString();
+
+            pbImagemPokedex.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pbImagemPokedex.Load(pkmnRecebido.fnLinkImg());
         }
     }
 }

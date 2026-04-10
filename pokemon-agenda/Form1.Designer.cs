@@ -43,6 +43,8 @@
             this.btnAjuda = new System.Windows.Forms.Button();
             this.dgvListaPokemon = new System.Windows.Forms.DataGridView();
             this.btnVisualizar = new System.Windows.Forms.Button();
+            this.btnTreinar = new System.Windows.Forms.Button();
+            this.lbNotTreino = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -218,17 +220,38 @@
             this.btnVisualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizar.Location = new System.Drawing.Point(369, 307);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(219, 34);
+            this.btnVisualizar.Size = new System.Drawing.Size(205, 34);
             this.btnVisualizar.TabIndex = 9;
             this.btnVisualizar.Text = "Visualizar detalhes";
             this.btnVisualizar.UseVisualStyleBackColor = true;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
+            // 
+            // btnTreinar
+            // 
+            this.btnTreinar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTreinar.Location = new System.Drawing.Point(580, 307);
+            this.btnTreinar.Name = "btnTreinar";
+            this.btnTreinar.Size = new System.Drawing.Size(89, 33);
+            this.btnTreinar.TabIndex = 10;
+            this.btnTreinar.Text = "Treinar";
+            this.btnTreinar.UseVisualStyleBackColor = true;
+            this.btnTreinar.Click += new System.EventHandler(this.btnTreinar_Click);
+            // 
+            // lbNotTreino
+            // 
+            this.lbNotTreino.AutoSize = true;
+            this.lbNotTreino.Location = new System.Drawing.Point(369, 81);
+            this.lbNotTreino.Name = "lbNotTreino";
+            this.lbNotTreino.Size = new System.Drawing.Size(0, 13);
+            this.lbNotTreino.TabIndex = 12;
             // 
             // fmCadastroPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbNotTreino);
+            this.Controls.Add(this.btnTreinar);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.dgvListaPokemon);
             this.Controls.Add(this.btnAjuda);
@@ -264,6 +287,8 @@
         private System.Windows.Forms.Button btnAjuda;
         private System.Windows.Forms.DataGridView dgvListaPokemon;
         private System.Windows.Forms.Button btnVisualizar;
+        private System.Windows.Forms.Button btnTreinar;
+        private System.Windows.Forms.Label lbNotTreino;
     }
 }
 

@@ -40,7 +40,7 @@
             // 
             this.pbImagemPokedex.Location = new System.Drawing.Point(12, 12);
             this.pbImagemPokedex.Name = "pbImagemPokedex";
-            this.pbImagemPokedex.Size = new System.Drawing.Size(309, 217);
+            this.pbImagemPokedex.Size = new System.Drawing.Size(309, 260);
             this.pbImagemPokedex.TabIndex = 0;
             this.pbImagemPokedex.TabStop = false;
             // 
@@ -48,7 +48,7 @@
             // 
             this.lbNome.AutoSize = true;
             this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(7, 232);
+            this.lbNome.Location = new System.Drawing.Point(7, 275);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(68, 25);
             this.lbNome.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.lbTipo.AutoSize = true;
             this.lbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTipo.Location = new System.Drawing.Point(7, 259);
+            this.lbTipo.Location = new System.Drawing.Point(7, 302);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(54, 25);
             this.lbTipo.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.lbNivel.AutoSize = true;
             this.lbNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNivel.Location = new System.Drawing.Point(7, 284);
+            this.lbNivel.Location = new System.Drawing.Point(7, 327);
             this.lbNivel.Name = "lbNivel";
             this.lbNivel.Size = new System.Drawing.Size(60, 25);
             this.lbNivel.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.Controls.Add(this.pbImagemPokedex);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDetalhesPkmn";
-            this.Text = "FormDetalhesPkmn";
+            this.Text = "Detalhes do Pokémon";
             this.Load += new System.EventHandler(this.FormDetalhesPkmn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagemPokedex)).EndInit();
             this.ResumeLayout(false);

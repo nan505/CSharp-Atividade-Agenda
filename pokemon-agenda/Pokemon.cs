@@ -38,8 +38,8 @@ namespace pokemon_agenda
             NomePkmn = nomePokemon;
             TipoPkmn = tipoPokemon;
             NivelPkmn = nivelPokemon;
-            VidaPkmn = 100 + (nivelPokemon * 2);
-            DanoPkmn = 20 + nivelPokemon;
+            VidaPkmn = 100 + (nivelPokemon * 3);
+            DanoPkmn = 20 + (nivelPokemon * 3);
         }
 
         /// <summary>
@@ -57,6 +57,36 @@ namespace pokemon_agenda
         {
             MessageBox.Show($"Pokémon: {NomePkmn}\nTipo: {TipoPkmn}\nNível: {NivelPkmn}\nVida: {VidaPkmn}\n" +
                 $"Ataque: {DanoPkmn}", "Informações");
+        }
+
+        /// <summary>
+        /// Faz o tratamento do nome do Pokémon desejado para retornar a URL da imagem já tratada.
+        /// </summary>
+        /// <returns>Retorna a URL da imagem do Pokémon desejado como string.</returns>
+        public string fnLinkImg()
+        {
+            string nomePkmnTratado = NomePkmn.Replace(" ", "-").Replace(".", "").ToLower();
+
+            return $"https://img.pokemondb.net/artwork/{nomePkmnTratado}.jpg";
+        }
+
+
+        /// <summary>
+        /// Treina o Pokémon desejado, aumentando seu nível em 1 caso o nível atual do Pokémon seja menor que 100.
+        /// </summary>
+        /// <returns>Essa função não retorna nada.</returns>
+        public void fnTreinarPkmn()
+        {
+            if(NivelPkmn < 100)
+            {
+                NivelPkmn++;
+                VidaPkmn = VidaPkmn + 20;
+                DanoPkmn = DanoPkmn + 20;
+            }
+            else
+            {
+                MessageBox.Show($"O Pokémon {NomePkmn} já está no nível máximo (100).", "Mensagem de Aviso");
+            }
         }
     }
 }
